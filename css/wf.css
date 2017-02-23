@@ -1,0 +1,71 @@
+*{
+	margin:0;padding:0;
+}
+.title{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 50px;
+}
+.cut{
+	width: 560px;
+	height: 380px;
+	margin:20px auto;
+	position: relative;
+	border:1px solid red;
+}
+.cut li{
+	position: absolute;
+	list-style: none;
+	width: 112px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: all 1s ease-in-out;
+	transform-style: preserve-3d;
+}
+.cut li div{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.cut li div:nth-child(1){
+	background: url(../images/f1.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateX(0deg) translateZ(190px);
+}
+.cut li div:nth-child(2){
+	background: url(../images/f2.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateX(-90deg) translateZ(190px);
+}
+.cut li div:nth-child(3){
+	background: url(../images/f3.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateX(-180deg) translateZ(190px);
+}
+.cut li div:nth-child(4){
+	background: url(../images/f4.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateX(-270deg) translateZ(190px);
+}
+
+.cut span{
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 100px;
+	margin-top: -50px;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	line-height: 100px;
+	color: #fff;
+	font-size: 50px;
+	cursor: default;
+	display: none;
+}
+.cut .prev{
+	left: 0;
+}
+.cut .next{
+	right: 0;
+}
