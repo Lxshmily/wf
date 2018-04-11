@@ -1,17 +1,24 @@
 *{
 	margin:0;padding:0;
 }
+body{
+	background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524021926&di=a1aaf5c3a4517e4a35556229b3040415&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.90sjimg.com%2Fback_pic%2Fqk%2Fback_origin_pic%2F00%2F01%2F41%2F894cfff10a4c9f136fe794bf90e9de1f.jpg) center center #000;
+}
 .title{
 	margin-top: 10px;
 	text-align: center;
 	font-size: 50px;
+	color: #fff;
+}
+.title p{
+	display: inline;
+	text-shadow: 5px 5px 1px #060;
 }
 .cut{
 	width: 560px;
 	height: 380px;
 	margin:20px auto;
 	position: relative;
-	border:1px solid red;
 }
 .cut li{
 	position: absolute;
