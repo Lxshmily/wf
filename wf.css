@@ -1,0 +1,78 @@
+*{
+	margin:0;padding:0;
+}
+body{
+	background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524021926&di=a1aaf5c3a4517e4a35556229b3040415&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.90sjimg.com%2Fback_pic%2Fqk%2Fback_origin_pic%2F00%2F01%2F41%2F894cfff10a4c9f136fe794bf90e9de1f.jpg) center center #000;
+}
+.title{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+}
+.title p{
+	display: inline;
+	text-shadow: 5px 5px 1px #060;
+}
+.cut{
+	width: 560px;
+	height: 380px;
+	margin:20px auto;
+	position: relative;
+}
+.cut li{
+	position: absolute;
+	list-style: none;
+	width: 112px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: all 1s ease-in-out;
+	transform-style: preserve-3d;
+}
+.cut li div{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.cut li div:nth-child(1){
+	background: url(../images/f1.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateX(0deg) translateZ(190px);
+}
+.cut li div:nth-child(2){
+	background: url(../images/f2.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateX(-90deg) translateZ(190px);
+}
+.cut li div:nth-child(3){
+	background: url(../images/f3.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateX(-180deg) translateZ(190px);
+}
+.cut li div:nth-child(4){
+	background: url(../images/f4.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateX(-270deg) translateZ(190px);
+}
+
+.cut span{
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 100px;
+	margin-top: -50px;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	line-height: 100px;
+	color: #fff;
+	font-size: 50px;
+	cursor: default;
+	display: none;
+}
+.cut .prev{
+	left: 0;
+}
+.cut .next{
+	right: 0;
+}
